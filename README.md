@@ -129,39 +129,3 @@ sudo apt install keychain
 I downloaded a font from [jetbrains mono](https://www.jetbrains.com/lp/mono/)
 
 Unpack fonts to ``~/.local/share/fonts or /usr/share/fonts`` (to install fonts system-wide) and after unpacking run ``fc-cache -f -v`` so the font can be found.
-
-### Troubleshooting the gnome-terminal
-
-```
-sudo apt install dconf-cli
-```
-
-Reinstalling terminal
-```
-dconf reset -f /org/gnome/terminal
-sudo apt-get remove gnome-terminal
-sudo apt-get install gnome-terminal
-```
-
-Install locales package
-```
-apt-get install -y locales
-```
- 
-Uncomment en_US.UTF-8 for inclusion in generation
-```
-sed -i 's/^# *\(en_US.UTF-8\)/\1/' /etc/locale.gen
-```
-
-Generate locale
-```
-locale-gen
-update-locale LANG=en_US.utf8
-```
-
-```
-# Export env vars
-echo "export LC_ALL=en_US.UTF-8" >> ~/.bashrc
-echo "export LANG=en_US.UTF-8" >> ~/.bashrc
-echo "export LANGUAGE=en_US.UTF-8" >> ~/.bashrc
-```

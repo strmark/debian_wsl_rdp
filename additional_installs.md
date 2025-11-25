@@ -9,7 +9,7 @@ I describe i.e. how I added Docker, Zsh(oh-my-zsh) to the WSL.
 Be sure the following tools are available.
 
 ```
-apt-get install zip curl wget
+apt-get install zip curl wget vim
 ```
  
 ## Installing Docker
@@ -65,6 +65,12 @@ I installed the node version manager.
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 ```
 
+## SDK-man
+
+SDK-man
+```
+curl -s "https://get.sdkman.io" | bash
+```
 ### Installing Keychain
 
 I installed keychain for the use of a ssh key with git and not having to type my password constantly.

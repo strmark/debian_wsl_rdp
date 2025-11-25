@@ -25,6 +25,7 @@ sudo apt autoremove
 ```
 sudo apt update && sudo apt -y upgrade
 sudo apt -y install cinnamon
+sudo apt -y install cinnamon-desktop-environment
 sudo apt -y install gnome
 sudo apt -y install gnome-session
 sudo apt -y install dbus-x11

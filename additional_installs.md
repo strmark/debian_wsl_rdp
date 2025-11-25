@@ -96,3 +96,9 @@ apt-get install deepin-terminal
 ```
 apt-get install azure-cli
 ```
+
+## Python 3 installer
+
+```
+sudo apt install python3-pip
+```

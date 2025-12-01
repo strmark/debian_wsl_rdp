@@ -51,7 +51,7 @@ and add these lines:
 ```
 # cinnamon
 dbus-update-activation-environment --all
-cinnamon-session
+cinnamon-session-cinnamon
 ```
 
 I added the "dbus-update-activation-environment --all" because the gnome-terminal was not starting and it gave a "Time-out".

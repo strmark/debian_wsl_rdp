@@ -22,5 +22,5 @@ sudo apt-get update
 
 Install google-chrome
 ```
-sudo apt install google-chrome
+sudo apt install google-chrome-stable
 ```

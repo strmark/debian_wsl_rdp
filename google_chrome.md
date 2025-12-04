@@ -30,3 +30,17 @@ Install google-chrome
 ```
 sudo apt install google-chrome-stable
 ```
+
+# Windows Chrome
+
+Running the google-chrome from windows. Add the following code as script in /usr/local/bin
+```
+#!/usr/bin/zsh
+if [ -e "$1" ]; then
+  local file_path
+  file_path=$(wslpath -w "$1")
+  "/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe" "$file_path"
+else
+  "/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe" "$1"
+fi
+```

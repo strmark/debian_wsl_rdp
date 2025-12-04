@@ -20,6 +20,13 @@ Update the software repository
 sudo apt-get update
 ```
 
+Check in /etc/apt/sources.list.d if google-chrome.sources and google-chrome.list exist. If so, remove the google-chrome.sources
+
+```
+sudo rm /etc/apt/sources.list.d/google-chrome.sources
+
+```
+
 Install google-chrome
 ```
 sudo apt install google-chrome-stable

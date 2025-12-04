@@ -24,7 +24,6 @@ Check in /etc/apt/sources.list.d if google-chrome.sources and google-chrome.list
 
 ```
 sudo rm /etc/apt/sources.list.d/google-chrome.sources
-
 ```
 
 Install google-chrome

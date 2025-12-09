@@ -71,7 +71,7 @@ SDK-man
 ```
 curl -s "https://get.sdkman.io" | bash
 ```
-### Installing Keychain
+## Installing Keychain
 
 I installed keychain for the use of a ssh key with git and not having to type my password constantly.
 
@@ -108,7 +108,7 @@ sudo apt install python3-pip
 wget https://github.com/derailed/k9s/releases/latest/download/k9s_linux_amd64.deb && apt install ./k9s_linux_amd64.deb && rm k9s_linux_amd64.deb
 ```
 
-### Kubectl
+## Kubectl
 
 ```
 curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.34/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
@@ -118,7 +118,7 @@ echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.
 sudo chmod 644 /etc/apt/sources.list.d/kubernetes.list
 ```
 
-### Helm 
+## Helm 
 
 From Apt (Debian/Ubuntu) Members of the Helm community have contributed an Apt package for Debian/Ubuntu. This package is generally up to date. Thanks to Buildkite for hosting the repo.
 ```
@@ -128,8 +128,15 @@ echo "deb [signed-by=/usr/share/keyrings/helm.gpg] https://packages.buildkite.co
 sudo apt-get update
 sudo apt-get install helm
 ```
+## K3D
 
-### btop
+K3D installation:
+
+```
+wget -q -O - https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
+```
+
+## btop
 
 ```
 apt-get install btop

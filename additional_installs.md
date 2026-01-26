@@ -147,3 +147,9 @@ apt-get install btop
 ```
 apt install gnome-console
 ```
+
+## keepassxc
+
+```
+apt install keepassxc
+```

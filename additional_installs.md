@@ -153,3 +153,12 @@ apt install gnome-console
 ```
 apt install keepassxc
 ```
+
+## yq
+
+Installation of Mike Farah's yq: https://github.com/mikefarah/yq/#install
+
+```
+wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/local/bin/yq &&\
+    chmod +x /usr/local/bin/yq
+```
